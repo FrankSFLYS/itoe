@@ -1,0 +1,28 @@
+
+%\usepackage{xcolor}
+%\usepackage{titlesec} % This package makes section unnable start \clearpage
+\usepackage{titletoc}  % includes \ttl@finishall
+
+\ctexset{
+    section/break = {\if@openright\cleardoublepage\else\clearpage\fi}
+}
+\setcounter{tocdepth}{1}
+
+\usepackage{geometry}
+\geometry{papersize={170mm,244mm},inner=2.2cm,outer=1.7cm,top=2.54cm,bottom=2.54cm}
+\usepackage{fancyhdr}
+%\fancyhead{}
+\fancyfoot{}
+\fancyhead[RO,LE]{$\cdot$\hspace{1ex}\thepage\hspace{1ex}$\cdot$}
+\fancyhead[RE]{\kaishu 光电子技术导论}
+%\fancyhead[LO,RE{}
+\renewcommand{\headrulewidth}{0.2pt}
+\pagestyle{fancy}
+\renewcommand{\contentsname}{目\quad 录}
+
+% \titleformat{\chapter}[display]
+%     {\normalfont\sffamily\LARGE}
+%     {\filleft\CTEXthechapter}%chapter number
+%     {5ex}%position of chapter number
+%     {\filleft #1}%chapter title name
+%     [\vspace{10ex}]
